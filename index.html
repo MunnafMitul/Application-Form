@@ -1,26 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home Page</title>
-            <link rel="stylesheet" href="style.css">
-        <body>
-            <div class="div1">
-                <h1>Taliwind CSS crash course</h1>
-            </div>
-            <div class="div2">
-                <a href="#" class="button">LOGO</a>
-            </div>
-            <div class="div3">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Sign Up</a></li>
-                </ul>
-            </div>
-              
-        </body>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>
+                Job Application
+            </h1>
+            <from action="">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first name">First Name</label>
+                        <input id="first name" name="first name" placeholder="Enter First name"/>                  
+                    </div>
+                        <div class="form-control">
+                            <label for="last name">Last Name</label>
+                            <input id="last name" name="last name" placeholder="Enter Last name">
+                        </div>
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-control">
+                            <label for="Job">Position</label>
+                            <select name="job" id="job">
+                                <option value="Frontend Developer">Frontend Developer</option>
+                                <option value="Backend Developer">Backend Developer</option>
+                                <option value="Fullstack Developer">Fullstack Developer</option>
+                                <option value="DevOps">DevOps</option>
+                                <option value="UI">UI UX Designer</option>
+                            </select>
+                        </div>
+                            <div class="form-control">
+                                <label for="address">Address</label>
+                                <textarea id="address" name="address" row="4" cols="50" placeholder="Enter Address">
+                                </textarea>
+                            </div>
+                            <div class="form-control">
+                                <label for="city">City</label>
+                                <input id="city" name="city" placeholder="Enter First city">
+                            </div>
+                        <div class="form-control">
+                            <label for="pincode">Pincode</label>
+                            <input type="number" id="pincode" name="pincode" placeholder="Enter your pincode">
+                        </div>
+                    <div class="form-control">
+                        <label for="date">Date</label>
+                        <input value="2024-01-12" type="date" id="date" name="date">
+                    </div>
+                    <div class="form-control">
+                        <label for="upload">Upload your CV</label>
+                        <input type="file" id="upload" name="upload" placeholder="upload your CV">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit"><b>Apply Now</b></button>
+                </div>        
+            </from>
+        </div>
+    </div>
+</body>
+
 </html>
